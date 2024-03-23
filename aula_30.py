@@ -45,8 +45,9 @@ def calcula_imc ():
         else:
             print(f"")
         
-        continuar = input("Deseja calcular o IMC novamente? (Digite 's' para sim ou qualquer outra coisa para sair): ")
-        if continuar.lower() != 's':
-            break
+        continuar = input("Deseja calcular o IMC novamente? (Digite 'c' para continuar ou 's' para sair: ")
+        if continuar.lower() == 's':
+            print('Obrigado e volte sempre ao nosso app.')
+            break              
 
-print(calcula_imc())
+(calcula_imc())
